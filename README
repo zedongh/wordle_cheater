@@ -1,0 +1,13 @@
+# Wordle Game Cheater
+
+## Usage
+
+- Step 1. use brower open [wordle](https://www.nytimes.com/games/wordle/index.html) website
+- Step 2. press `F12` open development console
+- Step 3. cpoy paste js code at `console` tab
+  - Method 1: short code show answer
+    ```js
+    alert(JSON.parse(window.localStorage.getItem('nyt-wordle-state'))?.solution)
+    ```
+  - Method 2: long code automatically solve (see fast_wordle_solver.js)
+- Step 4. game over.
