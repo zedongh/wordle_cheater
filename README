@@ -1,6 +1,6 @@
-# Wordle Game Cheater
+# Wordle Like Game Cheater
 
-## Usage
+## Wordle
 
 - Step 1. use brower open [wordle](https://www.nytimes.com/games/wordle/index.html) website
 - Step 2. press `F12` open development console
@@ -8,6 +8,18 @@
   - Method 1: short code show answer
     ```js
     alert(JSON.parse(window.localStorage.getItem('nyt-wordle-state'))?.solution)
+    ```
+  - Method 2: long code automatically solve (see fast_wordle_solver.js)
+- Step 4. game over.
+
+## Mathler
+
+- Step 1. use brower open [mathler](https://www.mathler.com/) website
+- Step 2. press `F12` open development console
+- Step 3. cpoy paste js code at `console` tab
+  - Method 1: short code show answer
+    ```js
+    alert(JSON.parse(window.localStorage.getItem('gameState'))?.solution)
     ```
   - Method 2: long code automatically solve (see fast_wordle_solver.js)
 - Step 4. game over.

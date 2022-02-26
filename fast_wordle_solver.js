@@ -1,14 +1,6 @@
-function repeat(n, item) {
-    result = [];
-    for (let i = 0; i < n; i++) {
-        result.push(item);
-    }
-    return result;
-}
-
 let item = JSON.parse(window.localStorage.getItem('nyt-wordle-state'))
 item.boardState[0] = item?.solution
-item.evaluations[0] = repeat(item?.solution.length, "correct")
+item.evaluations[0] = Array.from({length: item?.solution.length}, () => "correct")
 item.gameStatus = "WIN"
 item.rowIndex = 1
 item.lastPlayedTs = Date.now()
